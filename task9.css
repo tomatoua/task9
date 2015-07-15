@@ -1,0 +1,39 @@
+.listContainer{
+	width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    overflow: hidden;   
+}
+.listElement{
+	text-align: left;
+	margin-left: 30%;
+	background: #ccc;
+    position: relative;
+}
+.thumbnailImage{
+	height: 150px;
+	width: 150px;
+}
+.imageLabel{
+	position: absolute;
+	width:150px;
+	margin-left: 160px;
+	top: 30%;
+}
+.fullViewImage{
+	line-height: 0;
+    /* Отцентрированный даилог с тенью */
+    z-index:10000;
+    position: fixed;
+    opacity: 0.9;
+    /* Центрирование */
+    top: 50%;
+    left: 50%;
+    margin:auto;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 4px 4px 250px #000;
+}

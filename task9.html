@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>Task 9</title>
+	<script src="angular.js"></script>
+	<script src="angular-resource.min.js"></script>
+	<script src="angular-route.js"></script>
+	<!-- <script src="task9.js"></script> -->
+	<script src="app.js"></script>
+	<script src="galleryController.js"></script>
+	<script src="getDataHttpService.js"></script>
+	<script src="getDataResourceService.js"></script> 
+
+	<script src="imageView.js"></script>
+	<link rel="stylesheet" href="task9.css">
+</head>
+<body>
+	<div class="listContainer" ng-controller="galleryController as glrCtrl">	
+		<div class="listElement" ng-repeat="imgres in glrCtrl.imagesRecources" image-view imgres="{{imgres.url}}">
+			<img class="thumbnailImage" src="{{imgres.thumbnailUrl}}">		
+			<label class="imageLabel">{{imgres.title}}</label>
+		</div>
+	</div>
+</body>
+</html>
